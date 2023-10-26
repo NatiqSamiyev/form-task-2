@@ -186,6 +186,8 @@ ul li:last-child {
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transform: rotate(180deg); 
+
 }
 .option-box {
   border: 1px solid gray;
@@ -194,9 +196,10 @@ ul li:last-child {
   margin-top: 5px;
   display: none;
 }
-.active {
+.active{
   display: block;
 }
-.rotate {
-  transform: rotate(180deg) translateY(-50%);
+.rotate{
+  transform: rotate(180deg); 
+
 }

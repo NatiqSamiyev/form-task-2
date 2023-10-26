@@ -5,7 +5,7 @@ let subjectInput = document.querySelector(".subject-input");
 let messageInput = document.querySelector(".message-input");
 let selectBtn= document.querySelector('.select-box button')
 let optionBox =document.querySelector('.option-box')
-let selectSvg= document.querySelector('.select-box svg')
+let selectSvg= document.querySelector(.selec)
 // btn.addEventListener("click", submitForm);
 form.addEventListener("submit", submitForm);
 function submitForm(a) {
@@ -22,5 +22,4 @@ selectBtn.addEventListener('click',showOption)
 function showOption() {
   // optionBox.style.display= 'block'
   optionBox.classList.toggle('active')
-  selectSvg.classList.toggle("rotate")
 }

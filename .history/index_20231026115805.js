@@ -22,5 +22,5 @@ selectBtn.addEventListener('click',showOption)
 function showOption() {
   // optionBox.style.display= 'block'
   optionBox.classList.toggle('active')
-  selectSvg.classList.toggle("rotate")
+  sele
 }
