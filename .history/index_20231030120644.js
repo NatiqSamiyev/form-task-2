@@ -9,7 +9,7 @@ let bottomBox = document.querySelector(".bottom-box");
 let optionList = document.querySelectorAll(".option-box p");
 let ul = document.querySelector("ul");
 
-
+/
 form.addEventListener("submit", submitForm);
 
 function submitForm(a) {
@@ -59,7 +59,7 @@ for (let index = 0; index < optionList.length; index++) {
 }
 
 function selectList(event) {
-
+  console.log(event);
   selectBtn.innerText = event.innerText;
   showOption();
 }

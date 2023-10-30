@@ -1,27 +1,29 @@
 let btn = document.querySelector(".submit-btn");
 let form = document.querySelector("form");
 let emailInput = document.querySelector(".email-input");
+// let subjectInput = document.querySelector(".subject-input");
 let messageInput = document.querySelector(".message-input");
-let selectBtn = document.querySelector(".select-box button");
-let optionBox = document.querySelector(".option-box");
-let selectSvg = document.querySelector(".select-box svg");
-let bottomBox = document.querySelector(".bottom-box");
-let optionList = document.querySelectorAll(".option-box p");
-let ul = document.querySelector("ul");
+let selectBtn= document.querySelector('.select-box button')
+let optionBox =document.querySelector('.option-box')
+let selectSvg= document.querySelector('.select-box svg')
+let bottomBox=document.querySelector('.bottom-box')
+let optionList= document.querySelectorAll('.option-box p')
+let ul =document.querySelector('ul')
 
-
+// btn.addEventListener("click", submitForm);
 form.addEventListener("submit", submitForm);
 
 function submitForm(a) {
   a.preventDefault();
-  ul.innerHTML += `
+  ul.innerHTML+=
+  `
   <li>
   <div class="image-box">
     <img class="image-1" src="./image/Oval.svg" alt="" />
     <img class="image-2" src="./image/Shape.svg" alt="" />
   </div>
  
-  <p>${selectBtn.innerText}</p>
+  <p>${}</p>
 </li>
 
 <li>
@@ -29,7 +31,7 @@ function submitForm(a) {
     <img class="image-1" src="./image/Oval.svg" alt="" />
     <img class="image-2" src="./image/Path.svg" alt="" />
   </div>
-  <p>${emailInput.value}</p>
+  <p>+1 (234) 567-89-00</p>
 </li>
 
 <li>
@@ -37,29 +39,32 @@ function submitForm(a) {
     <img class="image-1" src="./image/Oval.svg" alt="" />
     <img class="image-2" src="./image/Shape (1).svg" alt="" />
   </div>
-  <p>${messageInput.value}</p>
+  <p>info@agency.com</p>
 </li>
-  <hr/>
-  `;
-  form.reset();
+  
+  `
+
 }
 
 // select action
-selectBtn.addEventListener("click", showOption);
+selectBtn.addEventListener('click',showOption)
 function showOption() {
-  optionBox.classList.toggle("active");
-  selectSvg.classList.toggle("no-rotate");
-  selectSvg.classList.toggle("rotate");
+  optionBox.classList.toggle('active')
+  selectSvg.classList.toggle('no-rotate')
+  selectSvg.classList.toggle("rotate")
 }
 
+
 for (let index = 0; index < optionList.length; index++) {
-  optionList[index].addEventListener("click", () =>
-    selectList(optionList[index])
-  );
+optionList[index].addEventListener('click',()=> selectList(optionList[index]))
 }
 
 function selectList(event) {
-
-  selectBtn.innerText = event.innerText;
-  showOption();
+ console.log(event); 
+ selectBtn.innerText=event.innerText
+ showOption()
 }
+
+
+
+

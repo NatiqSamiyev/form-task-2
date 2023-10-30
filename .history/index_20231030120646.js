@@ -59,7 +59,7 @@ for (let index = 0; index < optionList.length; index++) {
 }
 
 function selectList(event) {
-
+  console.log(event);
   selectBtn.innerText = event.innerText;
   showOption();
 }

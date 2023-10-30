@@ -1,6 +1,7 @@
 let btn = document.querySelector(".submit-btn");
 let form = document.querySelector("form");
 let emailInput = document.querySelector(".email-input");
+// let subjectInput = document.querySelector(".subject-input");
 let messageInput = document.querySelector(".message-input");
 let selectBtn = document.querySelector(".select-box button");
 let optionBox = document.querySelector(".option-box");
@@ -9,7 +10,7 @@ let bottomBox = document.querySelector(".bottom-box");
 let optionList = document.querySelectorAll(".option-box p");
 let ul = document.querySelector("ul");
 
-
+// btn.addEventListener("click", submitForm);
 form.addEventListener("submit", submitForm);
 
 function submitForm(a) {
@@ -59,7 +60,7 @@ for (let index = 0; index < optionList.length; index++) {
 }
 
 function selectList(event) {
-
+  console.log(event);
   selectBtn.innerText = event.innerText;
   showOption();
 }
