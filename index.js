@@ -5,7 +5,6 @@ let messageInput = document.querySelector(".message-input");
 let selectBtn = document.querySelector(".select-box button");
 let optionBox = document.querySelector(".option-box");
 let selectSvg = document.querySelector(".select-box svg");
-let bottomBox = document.querySelector(".bottom-box");
 let optionList = document.querySelectorAll(".option-box p");
 let ul = document.querySelector("ul");
 
